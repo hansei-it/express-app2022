@@ -10,3 +10,16 @@ const express = require('express');
 const router = express.Router( );
 라우터 작성.
 에러처리 미들웨어 작성.
+
+3. 제너레이터 이용한 기본 코드 생성 및 템플릿 엔진 사용
+mkdir gen-app
+cd gen-app
+npm install -g express-generator
+express -v ejs
+
+4. mysql DB 설치와 sequelize 를 이용한 ORM 실습
+npm i sequelize sequelize-cli mysql2
+npx sequelize init
+config 설정
+npx sequelize db:create 	 # db 생성
+npm i nunjucks path
